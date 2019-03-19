@@ -1,0 +1,146 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    line-height: 180%;
+    width: 100%;
+    padding: 3% 7% 3% 7%;
+    background-color: #E5E7E9;
+
+}
+
+a:link, a:hover, a:focus, a:active, a:visited {
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+
+}
+
+.name-logo a:link, 
+.name-logo a:hover,
+.name-logo a:focus,
+.name-logo a:active,
+.name-logo a:visited {
+    text-decoration: none;
+    color: #2E4053;
+    font-size: 1.75em;
+}
+
+.name-logo .last-name {
+    color: #85929E;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-item {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #34495E; 
+    list-style: none; 
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item a:link, .nav-item a:visited {
+    color: #ffffff;
+    text-decoration: none;
+} 
+
+.nav-item a:hover, 
+.nav-item a:focus, 
+.nav-item a:active {
+    text-decoration: underline; 
+}
+
+.headline {
+    font-size: 1.45em;
+    margin: 20px 0 5px 0;
+}
+
+.subhead {
+    font-size: 1.1em;
+    margin: 15px 0 2px 0;
+
+}
+
+.intro-copy p {
+    margin: 0 0 18px 0;
+}
+
+.portfolio-preview, .project-examples {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 5px;
+    border: 1px solid #BDC3C7;
+    padding: 5px;
+}
+
+.project-name, .project-info {
+    margin: 5px 5px;
+    line-height: 135%;
+
+}
+
+.project-name {
+    font-weight: bold;
+}
+
+.project-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    line-height: 135%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project-links > li {
+    padding: 0 10px 0 5px;
+}
+
+footer {
+    border-top: 1px solid #BDC3C7;
+}
+.footer-copy {
+    text-align: center;
+    font-size: .8em;
+}
+
