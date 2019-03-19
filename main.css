@@ -20,12 +20,30 @@ a:link, a:hover, a:focus, a:active, a:visited {
     cursor: pointer;
 }
 
+/* a:link {
+} */
+
+a:visited {
+    color: #34495E;
+}
+
+a:hover, a:focus {
+    font-weight: bold;
+}
+
+a:active {
+    color: #F5B041;
+}
+
+
+
 .nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
     align-items: center;
-
+    margin-bottom: 10px;
+    border-bottom: 1px solid #D7DBDD;
 }
 
 .name-logo a:link, 
@@ -36,6 +54,7 @@ a:link, a:hover, a:focus, a:active, a:visited {
     text-decoration: none;
     color: #2E4053;
     font-size: 1.75em;
+    font-weight: normal;
 }
 
 .name-logo .last-name {
@@ -63,6 +82,10 @@ a:link, a:hover, a:focus, a:active, a:visited {
     align-items: center;
 }
 
+.active-nav {
+    border: 5px solid #ffffff;
+}
+
 .nav-item a:link, .nav-item a:visited {
     color: #ffffff;
     text-decoration: none;
@@ -79,10 +102,19 @@ a:link, a:hover, a:focus, a:active, a:visited {
     margin: 20px 0 5px 0;
 }
 
+.project-headline {
+    align-self: flex-start;
+}
+
 .subhead {
     font-size: 1.1em;
     margin: 15px 0 2px 0;
 
+}
+
+.project-examples > p {
+    margin: 0 0 18px 0;
+    align-self: flex-start;
 }
 
 .intro-copy p {
@@ -136,8 +168,23 @@ a:link, a:hover, a:focus, a:active, a:visited {
     padding: 0 10px 0 5px;
 }
 
+.contact-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.contact-item {
+    width: 60px;
+    height: auto;
+
+}
+
 footer {
-    border-top: 1px solid #BDC3C7;
+    border-top: 1px solid #D7DBDD;
 }
 .footer-copy {
     text-align: center;
