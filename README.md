@@ -1,7 +1,9 @@
 # portfolioLafranchise
 Web development portfolio for Melissa Lafranchise.
 
-This portfolio showcases my web development projects, a brief professional biography, and my contact information. 
+This portfolio showcases my web development projects, and includea brief professional biography and my contact information. 
+
+It's a simple site built using HTML and CSS with Flexbox and Grid.
 
 ### Representative projects
 - An interactive web quiz that tests your knowledge of science fiction and fantasy authors

@@ -7,21 +7,17 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: .9em;
+    font-family: 'Istok Web', sans-serif;
+    font-size: 1em;
     line-height: 180%;
     width: 100%;
-    padding: 3% 7% 3% 7%;
-    background-color: #E5E7E9;
-
+    padding: 2% 7% 2% 7%;
+    background-color: #F2F3F4;
 }
 
 a:link, a:hover, a:focus, a:active, a:visited {
     cursor: pointer;
 }
-
-/* a:link {
-} */
 
 a:visited {
     color: #34495E;
@@ -34,8 +30,6 @@ a:hover, a:focus {
 a:active {
     color: #F5B041;
 }
-
-
 
 .nav {
     display: flex;
@@ -52,13 +46,14 @@ a:active {
 .name-logo a:active,
 .name-logo a:visited {
     text-decoration: none;
-    color: #2E4053;
+    color: #000000;
     font-size: 1.75em;
     font-weight: normal;
+    font-family: 'EB Garamond', serif;
 }
 
 .name-logo .last-name {
-    color: #85929E;
+    color: #757575;
 }
 
 .nav-links {
@@ -73,7 +68,6 @@ a:active {
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    background-color: #34495E; 
     list-style: none; 
     margin: 5px;
     display: flex;
@@ -82,8 +76,19 @@ a:active {
     align-items: center;
 }
 
+.bio {
+    background-color: #52BE80;
+}
+
+.projects {
+    background-color: #7D3C98; 
+}
+
+.contact {
+    background-color: #F5B041;
+}
 .active-nav {
-    border: 5px solid #ffffff;
+    border: 5px solid #2980B9;
 }
 
 .nav-item a:link, .nav-item a:visited {
@@ -98,6 +103,7 @@ a:active {
 }
 
 .headline {
+    font-family: 'EB Garamond', serif;
     font-size: 1.45em;
     margin: 20px 0 5px 0;
 }
@@ -107,9 +113,9 @@ a:active {
 }
 
 .subhead {
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin: 15px 0 2px 0;
-
+    font-family: 'EB Garamond', serif;
 }
 
 .project-examples > p {
@@ -124,8 +130,11 @@ a:active {
 .portfolio-preview, .project-examples {
     display: flex;
     flex-direction: column; 
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .project {
@@ -139,14 +148,17 @@ a:active {
     height: auto;
     max-width: 500px;
     border-radius: 5px;
-    border: 1px solid #BDC3C7;
+    border: 1px solid #D7DBDD;
     padding: 5px;
 }
 
 .project-name, .project-info {
     margin: 5px 5px;
     line-height: 135%;
-
+}
+.project-tech {
+    padding-left: 25px;
+    margin: 5px 0;
 }
 
 .project-name {
@@ -160,12 +172,12 @@ a:active {
     line-height: 135%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-start; 
     align-items: center;
 }
 
 .project-links > li {
-    padding: 0 10px 0 5px;
+    padding: 0 10px;
 }
 
 .contact-icons {
@@ -180,7 +192,6 @@ a:active {
 .contact-item {
     width: 60px;
     height: auto;
-
 }
 
 footer {
@@ -189,5 +200,66 @@ footer {
 .footer-copy {
     text-align: center;
     font-size: .8em;
+}
+
+/* Responsive layouts */
+@media screen and (min-width: 650px) {
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .intro-copy, .headline {
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-examples {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        grid-auto-rows: minmax(50px, auto);
+        align-items: start;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+
+    .project-headline-large {
+        margin: 20px 0 5px 0;
+    }
+
+    .project-intro {
+        grid-column: 1 / 3
+    }
+}
+
+@media screen and (min-width: 875px) {
+    .large-screen-layout {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%; 
+    }
+
+    .portfolio-preview {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-preview {
+        margin: 10px;
+        width: 33.3%;  
+    }
+
+    .subhead-preview {
+        margin-left: 10px;
+    }
 }
 
