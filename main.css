@@ -24,7 +24,7 @@ a:visited {
 }
 
 a:hover, a:focus {
-    font-weight: bold;
+    color: #E74C3C;
 }
 
 a:active {
