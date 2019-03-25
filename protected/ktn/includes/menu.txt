@@ -1,0 +1,27 @@
+        <div class="Adopt">
+        <p class="maincat">Adopt</p>
+                <ul>
+                <li class="subnav dogslink"><a href="dogs.php" title="Dogs in need of new homes">Dogs</a></li>
+                <li class="subnav catslink"><a href="cats.php" title="Cats in need of new homes">Cats</a></li>
+                <li class="subnav exoticslink"><a href="exotics.php" title="Exotic animals in need of new homes">Exotics</a></li> 
+                </ul>
+        </div> <!--/Adopt-->
+        
+        <div class="Help">
+          <p class="maincat">Help</p> 
+                <ul>
+                <li class="subnav donatelink"><a href="donate.php" title="Donate to the Ketchikan Humane Society">Donate</a></li>
+                <li class="subnav fosterlink"><a href="foster.php" title="Foster animals for the Ketchikan Humane Society">Foster</a></li>
+                <li class="subnav sponsorlink"><a href="sponsor.php" title="Sponsor the Ketchikan Humane Society">Sponsor</a></li> 
+                </ul>
+        </div> <!--/Help-->
+            
+        <div class="Aboutus">
+          <p class="maincat">About us</p> 
+                <ul>
+                <li class="subnav missionlink"><a href="mission.php" title="Mission of the Ketchikan Humane Society">Mission</a></li>
+                <li class="subnav eventslink"><a href="events.php" title="Fundraising Events for the Ketchikan Humane Society">Events</a></li>
+                <li class="subnav spendinglink"><a href="spending.php" title="How we spend donations">Spending</a></li>
+                <li class="subnav contactlink"><a href="contact.php" title="Contact the Ketchikan Humane Society">Contact</a></li>
+                </ul>
+        </div> <!--/About us-->  

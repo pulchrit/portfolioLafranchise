@@ -1,0 +1,89 @@
+<!--User Story: I can push a button to toggle between Fahrenheit and Celsius.Need two API calls. Should I do them together at beginning and save C and F into separate variables? Or only do the second call if requested by the user?-->
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!--override zoom out of mobile browsers-->
+  <meta name="author" content="Melissa Lafranchise">
+  <meta name="description" content="Simple weather app that calls user's weather from Weather Underground API. Completed as part of the Free Code Camp Front End Development Certificate.">
+
+  <title>What's the weather?</title>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Link to custom CSS stylesheet -->
+  <link rel="stylesheet" href="weatherreport.css">
+
+  <!-- Latest compiled and minified Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Link to javascript file -->
+  <script src="weatherreport.js"></script>
+
+  <!-- Google maps api -->
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbREXYEa9RVo-lMFZ1USMQuyuVtdZK4AM&callback=initMap">
+  </script>
+
+</head>
+
+<body>
+
+   <div id="google_map">
+   </div>
+
+   <div class="container-fluid">
+
+      <div class="row" id="weather_area">
+
+         <div class="col-xs-2 col-sm-4">
+         </div>
+
+         <div class="col-xs-8 col-sm-4">
+            <h3>What's the weather?</h3>
+
+            <div id="icon">
+            </div>
+
+            <div class="info_box" id="city">
+               City
+            </div>
+
+            <div class="info_box" id="toggle-temp">
+                 Temperature
+            </div>
+
+            <div class="info_box" id="weather_desc">
+               Current weather
+            </div>
+
+            <footer>
+               <div id="weather-data-provider">
+               </div>
+               <p>&copy; 2016 Melissa Lafranchise</p>
+            </footer>
+         </div>
+
+         <div class="col-xs-2 col-sm-4">
+         </div>
+
+      </div><!--End row div-->
+   </div> <!--End container-fluid-->
+
+ </body>
+
+</html>

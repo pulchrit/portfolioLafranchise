@@ -1,0 +1,83 @@
+
+body {
+   height: 100%;
+   width: 100%;
+   background-color: #f9f9f9;
+}
+
+html, body, div.container-fluid {
+   height: 100%;
+   width: 100%;
+}
+
+#top_box {
+   height: 15%;
+}
+
+#click_area {
+   text-align: center;
+}
+
+.btn-large {
+   color: #ffffff;
+   background-color: #d52b2b;
+   border-radius: 1px;
+   box-shadow: -5px 5px 10px #a06060;
+   font-size: 1.2em;
+   font-family: 'Audiowide', cursive;
+   letter-spacing: 1px;
+}
+
+/*Turn off blue border of focus state and change text color back to white*/
+button#get_quote.btn.btn-large {
+/*button:focus {*/
+   outline: none;
+   color: #ffffff;
+}
+
+#get_quote {
+   padding: 15px 10px;
+}
+
+#tweet_area {
+   text-align: center;
+}
+
+#tweet_area button img {
+   height: 35px;
+   width: 35px;
+}
+
+.quote_text, .byline {
+   color: #808080;
+   font-size: 1.125em;
+   font-family: 'Lora', serif;
+   letter-spacing: 1px;
+}
+
+#quote_area .quote_text {
+   text-align: justify;
+   line-height: 2.4em;
+   margin-top: 25px;
+}
+
+#quote_area .byline {
+   text-align: right;
+   margin-bottom: 25px;
+}
+
+footer {
+   text-align: center;
+   font-size: .8em;
+   color: #5a5a5a;
+   font-family: 'Lora', serif;
+   margin-top: 25px;
+}
+
+footer a {
+    color: #bc4444;
+}
+
+a:hover {
+   color: #3b3b3b;
+}

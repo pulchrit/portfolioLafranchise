@@ -1,0 +1,52 @@
+body {
+  background-color: rgba(0, 128, 0, .5);
+}
+
+/*Styles for weatherreport index.html
+/*Uses google map as background of screen. Z-index of 0 ensures it is the bottom layer.*/
+#google_map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: .1;
+}
+
+/*Weather area is placed on top layer using a Z-index of 1 */
+#weather_area {
+  height: auto;
+  position: relative;
+  z-index: 1; /* The z-index should be higher than Google Maps */
+  margin: 60px auto 0;
+  font-family: 'Cutive Mono', monospace;
+}
+
+.info_box {
+   background-color: #ffac76;
+   color: #000;
+   margin: 20px 0;
+   padding: 20px;
+   border-radius: 5px;
+   font-size: 1.25em;
+}
+
+.info_box>a {
+  cursor: pointer;
+}
+
+#icon {
+  text-align: center;
+}
+
+h3 {
+   font-size: 1.75em;
+   text-align: center;
+   text-shadow: .2px .2px .2px #000;
+}
+
+footer {
+   margin-top: 50px;
+   text-align: center;
+}

@@ -1,0 +1,141 @@
+/* Print stylsheet for Ketchikan Humane Society site */
+
+/* ------------Global styles------------ */
+* {
+    background-color: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+
+#menu, .content a.eventanchors, .sidebar aside.relatedcontent, .sidebar aside.reminder, footer img, footer p:first-of-type {
+    display: none;
+}
+
+
+header, div.content, div.sidebar, footer, footer p:last-of-type {
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+}
+
+div.content, div.sidebar, figure.gallery, footer, footer p:last-of-type {
+    float: none;
+}
+
+/* ------------End Global styles------------ */
+
+
+
+/* ------------Header------------ */
+
+header {
+    position: static;
+    border: 0;
+}
+
+.logo {
+    margin-bottom: 10pt;
+}
+
+/* ------------End Header------------ */
+
+
+
+/* ------------Main content, sidebar, text, non-nav links------------ */
+
+div.content {
+    padding-top: 10pt;
+    border-top: 1pt solid #000;
+}
+
+h1 {
+    font-size: 18pt !important;
+}
+
+h2 {
+    font-size: 16pt !important;
+}
+
+h3 {
+    font-size: 14pt !important;
+}
+
+p {
+    font-size: 12pt !important;
+}
+
+p a[href^="http://"]:after {
+    content: " (" attr(href) ") ";
+    padding-right: 0;
+}
+
+p a[href^="https://"]:after {
+    content: " (" attr(href) ") ";
+    padding-right: 0;
+}
+
+.content a[href$=".pdf"], .sidebar a[href$=".pdf"] {
+    padding-right: 0;
+}
+
+.content a[href^="http://"], .sidebar a[href^="http://"] {
+    padding-right: 0;
+}
+
+figure.gallery {
+    display: inline-block;
+    vertical-align: top;
+}
+
+br.clear.gallerybr {
+    display: none;
+}
+
+.content th {
+    border-bottom: 1pt solid #000;
+}
+
+
+div.sidebar {
+    float: none;
+    margin: 10pt 0;
+    padding: 0;
+}
+
+.relatedcontent, .petofweek {
+    border-top: 1pt solid #000;
+    border-bottom: 0;
+}
+
+.relatedcontent {
+    margin-bottom: 5pt;
+}
+
+.petofweek img {
+    padding: 0;
+    float: left;
+    margin: 5pt 10pt 20pt 0;
+}
+/* ------------End main content, sidebar, text, non-nav links------------ */
+
+
+/* ------------Footer------------ */
+footer {
+    border-top: 1pt solid #000;
+    margin: 0;
+    padding: 10pt 0;
+}
+
+footer p:last-of-type {
+    float: none;
+    margin-top: 13pt;
+}
+/* ------------End footer------------ */
+
+
+
+
+

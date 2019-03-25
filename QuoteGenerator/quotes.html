@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!--override zoom out of mobile browsers-->
+  <meta name="author" content="Melissa Lafranchise">
+  <meta name="description" content="Click a button to generate a quote from Forismatic.com API. Tweet out the quote with the click of another button. Completed as part of the Free Code Camp Front End Development Certificate.">
+
+  <title>Generate a Random Quote</title>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Link to custom CSS stylesheet -->
+  <link rel="stylesheet" href="quotes.css">
+
+  <!-- Latest compiled and minified Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Audiowide|Averia+Sans+Libre|Expletus+Sans:500|Lora:700|Righteous" rel="stylesheet">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Link to javascript file -->
+  <script src="quotes.js"></script>
+
+
+<!--Below script should include Twitter's widgets on the page for better performance. Not sure if this is absolutely necessary.-->
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row" id="top_box">
+      <div class="col-xs-12">
+      </div>
+    </div>
+
+     <div class="row"> <!--Click area row-->
+       <div class="col-xs-1 col-sm-4">
+       </div>
+       <div class="col-xs-10 col-sm-4" id="click_area">
+          <button id="get_quote" class="btn btn-large">Click for quote</button>
+       </div>
+       <div class="col-xs-1 col-sm-4">
+       </div>
+   </div> <!--End click area-->
+
+     <div class="row"> <!--Quote area row-->
+       <div class="col-xs-1 col-sm-4">
+       </div>
+       <div class="col-xs-10 col-sm-4" id="quote_area">
+          <!--Placeholder/instructions text-->
+          <p class="quote_text" style="text-align:center;">Click above for a quote.</p>
+          <p class="quote_text" style="text-align:center; margin-top: 0px;">Click below to Tweet it.</p>
+       </div>
+       <div class="col-xs-1 col-sm-4">
+       </div>
+   </div> <!--End quote area-->
+
+     <div class="row"> <!--Tweet area row-->
+       <div class="col-xs-1 col-sm-4">
+       </div>
+       <div class="col-xs-10 col-sm-4" id="tweet_area">
+          <button class="btn btn-large">
+             <a href="https://twitter.com/share"><img src="../images/Twitter_Social_Icon_White.png" alt="Tweet this button"></a>
+          </button>
+       </div>
+       <div class="col-xs-1 col-sm-4">
+       </div>
+   </div><!--End tweet area-->
+
+
+     <div class="row"> <!--Footer area-->
+        <footer>Quotes provided by <a href="http://forismatic.com/en/">forismatic.com</a>
+        </footer>
+        <footer>&copy; 2016 Melissa Lafranchise</footer>
+     </div> <!--End footer area-->
+  </div>
+  </body>
+</html>

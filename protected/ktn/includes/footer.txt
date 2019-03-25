@@ -1,0 +1,3 @@
+    <img src="images/seamus.jpg" alt="Photo of Seamus the cat">
+    <p>Web hosting and administration donated in memory of Seamus.</p>
+    <p>Copyright &copy; 2013 Ketchikan Humane Society</p>
