@@ -34,7 +34,6 @@ if (navigator.geolocation) {
           url: "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=imperial&APPID=d3964a45d06264825164f78a5f5e4543",
           dataType: "json",
           success: function(json) {
-            console.log(json);
 
             var location = json.name;
             $("#city").html(location);
