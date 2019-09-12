@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A new view of your favorite poets. 
+            Analyze word frequency of poets' works and see resulting data visualizations.">
+        
+        <title>Poems, computed</title>
+
+        <!--Normalize css-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+        <!--Link to Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Assistant|Seaweed+Script|Squada+One|Unna" rel="stylesheet">      
+        <!--Link to custom css-->
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <!--Link to HighCharts-->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <!--Link to HighCharts module for Word Chart-->
+        <script src="https://code.highcharts.com/modules/wordcloud.js"></script>
+    
+    </head>
+
+    <body>
+        
+        <header class="header-styles" role="banner">
+            
+            <h1>Poems<span class="computed">computed</span></h1>
+
+            <p class="instructions">
+                Interested in seeing a different view of the themes and word choices of your 
+                favorite poets? Enter the name(s) below to perform a word frequency analysis, 
+                or choose one of the predefined searches. Results will be displayed in a 
+                word chart. You can also view the data or the poems used in the analysis.  
+            </p>
+       
+        </header>
+
+        <main role="main">
+            
+            <div class="search-predefined-large-screen-layout">
+
+                <section class="search-poets-styles">
+                    
+                    <button tabindex="0" type="button" class="searches-collapsible js-poet-search">Search poets:</button>
+
+                    <form role="form" class="collapsible-content hidden js-poet-search-form">
+                        
+                        <label class="input-styles" for="poets">Enter poet (or poets separated by commas):
+                            <input type="text" id="poets" name="poets" 
+                                required placeholder="Shakespeare, Emily Dickinson" 
+                                aria-controls="error-region error-region2 results-region">
+                        </label>
+
+                        <!-- If compare is checked, then the value 'yes' will be passed on submit. -->
+                        <label class="gray-checkbox" id="checkbox" for="compare-poets">
+                            <input type="checkbox" id="compare-poets" name="compare-poets" value="yes" disabled>
+                            See comparison charts for multiple poets
+                        </label>
+
+                        <button class="input-button-styles" type="submit">Find poets</button>
+
+                    </form>
+
+                </section>
+
+                <section class="predefined-search-style js-predefined-search">
+                    
+                    <!-- Collapsible based on: https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+                    <button tabindex="0" type="button" class="searches-collapsible js-predefined-searches">Sample searches:</button>
+                    <form role="form" class="collapsible-content hidden js-predefined-searches-list">
+                            
+                            <label class="input-styles predefined-input-styles" for="predefined-searches">Please select a poet or poets:</label>
+                            <select class="predefined-select-box-styles" id="predefined-searches" 
+                                aria-controls="error-region error-region2 results-region">
+                                <optgroup label="Individual poets">
+                                    <option value="Jupiter Hammon">Jupiter Hammon</option>
+                                    <option value="Edgar Allan Poe">Edgar Allan Poe</option>
+                                </optgroup>
+                                <optgroup label="Poets compared">
+                                    <option value="William Shakespeare, Emily Dickinson">Shakespeare to Emily Dickinson</option>
+                                    <option value="Katherine Philips, Walt Whitman">Katherine Philips to Walt Whitman</option>
+                                </optgroup>
+                            </select>
+                        
+                            <button class="input-button-styles" type="submit">Get results</button>
+
+                    </form>
+
+                </section>
+            </div>
+            
+            <section role="region" id="error-region" class="error-styles js-error hidden" aria-live="polite"></section>
+
+            <section role="region" id="error-region2" class="poet-list-styles js-poet-list hidden" aria-live="polite">
+                <label for="poet-list">
+                    Apologies, the PoetryDB is really quite small. Choose a name from the drop-down below,
+                    and it will automatically be added to the search box. You can make multiple
+                    selections before submitting the search.  
+                </label>
+                <br>
+                <select id="poet-list"></select>
+            </section>
+
+            <section role="region" id="results-region" class="js-results hidden" aria-live="polite">
+                <div class="singleAggregate"></div>
+                <div class="individual"></div>
+            </section>
+
+        </main>
+
+        <footer role="contentinfo" class="footer">
+            
+            <p>Powered by <a class="text-links" href="http://poetrydb.org/index.html">PoetryDB</a> 
+                and <a class="text-links" href="https://www.highcharts.com/">Highcharts</a>.</p>
+
+            <p>Image credit: <a class="text-links" href="https://commons.wikimedia.org/w/index.php?curid=976862">
+                Emily Dickinson's Wild Nights Manuscript, Public Domain</a> </p>
+
+            <address>
+                &copy;2019  <a class="text-links" href="mailto:pulchrit@gmail.com">Melissa Lafranchise</a>
+            </address>
+        
+        </footer>
+
+        <!--Links to jQuery, local Javascript and data files-->
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="createContent.js"></script>
+        <script src="display.js"></script>
+        <script src="processData.js"></script>
+    </body>
+</html>
