@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/data-viz-opioid-deaths/static/css/main.d329a8e0.chunk.css",
+    "main.js": "/data-viz-opioid-deaths/static/js/main.b6de3386.chunk.js",
+    "main.js.map": "/data-viz-opioid-deaths/static/js/main.b6de3386.chunk.js.map",
+    "runtime-main.js": "/data-viz-opioid-deaths/static/js/runtime-main.49888dc3.js",
+    "runtime-main.js.map": "/data-viz-opioid-deaths/static/js/runtime-main.49888dc3.js.map",
+    "static/js/2.9a8efeca.chunk.js": "/data-viz-opioid-deaths/static/js/2.9a8efeca.chunk.js",
+    "static/js/2.9a8efeca.chunk.js.map": "/data-viz-opioid-deaths/static/js/2.9a8efeca.chunk.js.map",
+    "index.html": "/data-viz-opioid-deaths/index.html",
+    "precache-manifest.03b0fe14a174f89d682191fbbf9e4c3b.js": "/data-viz-opioid-deaths/precache-manifest.03b0fe14a174f89d682191fbbf9e4c3b.js",
+    "service-worker.js": "/data-viz-opioid-deaths/service-worker.js",
+    "static/css/main.d329a8e0.chunk.css.map": "/data-viz-opioid-deaths/static/css/main.d329a8e0.chunk.css.map",
+    "static/media/GBD_2017_death_rate_opioid_use_disorders_all_ages.csv": "/data-viz-opioid-deaths/static/media/GBD_2017_death_rate_opioid_use_disorders_all_ages.122c5bb1.csv"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.49888dc3.js",
+    "static/js/2.9a8efeca.chunk.js",
+    "static/css/main.d329a8e0.chunk.css",
+    "static/js/main.b6de3386.chunk.js"
+  ]
+}
