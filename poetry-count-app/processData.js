@@ -61,7 +61,7 @@ function enableCheckboxOnCommaDetected() {
 
 // poetList = {authors: ["Adam Lindsay Gordon","Alan Seeger"...]}
 function getPoetList() {
-    fetch("https://poetrydb.org/authors")
+    fetch("http://poetrydb.org/authors")
     .then(handleResponseErrors)
     .then(responseJSON => displayPoetsList(responseJSON))
     .catch(error => {

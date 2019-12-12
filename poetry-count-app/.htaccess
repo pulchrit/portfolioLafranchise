@@ -1,0 +1,4 @@
+Header always unset Strict-Transport-Security
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 443
+RewriteRule ^(.*)$ http://melissalafranchise.com/poetry-count-app/$1 [R=301,L]
