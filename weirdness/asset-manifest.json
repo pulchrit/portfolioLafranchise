@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/weirdness/static/css/main.319c7081.chunk.css",
+    "main.js": "/weirdness/static/js/main.464d82ed.chunk.js",
+    "main.js.map": "/weirdness/static/js/main.464d82ed.chunk.js.map",
+    "runtime-main.js": "/weirdness/static/js/runtime-main.73df77d5.js",
+    "runtime-main.js.map": "/weirdness/static/js/runtime-main.73df77d5.js.map",
+    "static/js/2.6ded5da2.chunk.js": "/weirdness/static/js/2.6ded5da2.chunk.js",
+    "static/js/2.6ded5da2.chunk.js.map": "/weirdness/static/js/2.6ded5da2.chunk.js.map",
+    "index.html": "/weirdness/index.html",
+    "precache-manifest.9a655f12a4c59f86341418927a4fef9d.js": "/weirdness/precache-manifest.9a655f12a4c59f86341418927a4fef9d.js",
+    "service-worker.js": "/weirdness/service-worker.js",
+    "static/css/main.319c7081.chunk.css.map": "/weirdness/static/css/main.319c7081.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73df77d5.js",
+    "static/js/2.6ded5da2.chunk.js",
+    "static/css/main.319c7081.chunk.css",
+    "static/js/main.464d82ed.chunk.js"
+  ]
+}
